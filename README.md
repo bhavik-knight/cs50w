@@ -1,4 +1,4 @@
-cs50w
+Harvardx, cs50w
 ----------------------
 
 ----------------------
@@ -13,4 +13,5 @@ Prerequisite: cs50 or similar programming experience
 ----------------------
 edx-link:  https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web/course/
 
-----------------------
+- ---------------------
+
