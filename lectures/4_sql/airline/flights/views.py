@@ -11,11 +11,16 @@ def index(request):
 
 
 def flight(request, flight_id):
+    flight_instance, passengers = None, None
     try:
         flight_instance = Flight.objects.get(id=flight_id)
+        passengers = flight_instance.passengers.all()
     except Flight.DoesNotExist:
         flight_instance = None
+    except AttributeError:
+        passengers = None
 
     return render(request, "flights/flight.html", {
-        "flight": flight_instance
+        "flight": flight_instance,
+        "passengers": passengers
     })
